@@ -29,7 +29,7 @@ export class GoogleReCaptchaProvider extends React.Component<
 > {
   scriptId = 'google-recaptcha-v3';
   hostname = this.props.useRecaptchaNet ? 'recaptcha.net' : 'google.com';
-  googleRecaptchaSrc = `https://www.${hostname}/recaptcha/api.js`;
+  googleRecaptchaSrc = `https://www.${this.hostname}/recaptcha/api.js`;
   resolver: any = undefined;
   rejecter: any = undefined;
 
